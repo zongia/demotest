@@ -1,5 +1,10 @@
-package com.example.demo;
+package com.example.demo.Controller;
 
+import com.example.demo.Dto.DtoTest2;
+import com.example.demo.Dto.Dtotest;
+import com.example.demo.Mapper.Mapper;
+import com.example.demo.Repos.Repos;
+import com.example.demo.Service.NewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

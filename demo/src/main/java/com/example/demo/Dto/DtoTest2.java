@@ -1,6 +1,5 @@
-package com.example.demo;
+package com.example.demo.Dto;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import java.util.List;

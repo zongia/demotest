@@ -1,8 +1,7 @@
-package com.example.demo;
+package com.example.demo.Entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import org.w3c.dom.Text;
 
 import java.time.LocalDateTime;
 

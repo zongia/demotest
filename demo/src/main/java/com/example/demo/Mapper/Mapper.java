@@ -1,6 +1,8 @@
-package com.example.demo;
+package com.example.demo.Mapper;
 
-import jakarta.persistence.Entity;
+import com.example.demo.Dto.DtoTest2;
+import com.example.demo.Repos.Repos;
+import com.example.demo.Entity.entity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
