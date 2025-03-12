@@ -2,7 +2,6 @@ package com.example.demo.Controller;
 
 import com.example.demo.Dto.DtoTest2;
 import com.example.demo.Dto.Dtotest;
-import com.example.demo.Mapper.Mapper;
 import com.example.demo.Repos.Repos;
 import com.example.demo.Service.NewService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +17,7 @@ public class Controller {
     NewService newService;
     @Autowired
     Repos repos;
-    @Autowired
-    Mapper mapper;
+
     @GetMapping("/test/{test}")
     public DtoTest2 asd(@PathVariable String test)
     {
@@ -46,7 +44,7 @@ public class Controller {
         }else {dtotest1.setArticles(dtoTest2.getArticles());}
         dtotest1.setArticles(tests);
 
-       mapper.convert(dtoTest2);
+       newService.save(dtoTest2);
 
         return dtotest1;
 
